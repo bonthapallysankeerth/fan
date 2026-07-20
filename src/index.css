@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+@theme {
+  --color-campaign-orange: #ff9933;
+  --color-campaign-green: #138808;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Noto Sans", "Noto Sans Telugu", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a,
+button {
+  touch-action: manipulation;
+}
+
+#root {
+  min-height: 100dvh;
+}
